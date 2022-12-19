@@ -1,0 +1,52 @@
+<template>
+    <!-- sldsValidatorIgnoreNextLine -->
+    <fieldset class="slds-form-element">
+        <div class="slds-form-element__control">
+            <template for:each={items} for:item="item">
+                <div
+                    class="slds-visual-picker slds-visual-picker_medium"
+                    key={item.index}
+                >
+                    <input
+                        type="radio"
+                        id={item.index}
+                        value={item.name}
+                        name="mascotPicker"
+                        onchange={handleChange}
+                    />
+                    <label for={item.index}>
+                        <span
+                            class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center"
+                        >
+                            <span>
+                                <img
+                                    src={item.src}
+                                    alt={item.name}
+                                    width="100"
+                                    height="110"
+                                />
+                            </span>
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small"
+                                >{item.name}</span
+                            >
+                        </span>
+                        <span
+                            class="slds-icon_container slds-visual-picker__text-check"
+                        >
+                            <lightning-icon
+                                icon-name="utility:check"
+                                alternative-text="Check"
+                                title="Check"
+                                size="xx-small"
+                                variant="inverse"
+                                aria-hidden="true"
+                            ></lightning-icon>
+                        </span>
+                    </label>
+                </div>
+            </template>
+        </div>
+    </fieldset>
+</template>

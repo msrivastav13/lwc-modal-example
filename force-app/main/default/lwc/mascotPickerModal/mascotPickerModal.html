@@ -1,0 +1,11 @@
+<template>
+    <lightning-modal-header
+        label="Mascot Picker Modal"
+    ></lightning-modal-header>
+    <lightning-modal-body>
+        <c-visual-picker items={mascots} onselect={handleSelect}></c-visual-picker>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="Confirm" onclick={handleConfirm}></lightning-button>
+    </lightning-modal-footer>
+</template>

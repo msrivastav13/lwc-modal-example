@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-var-m-top_small slds-var-m-bottom_medium">
+        <lightning-card title="Mascot Picker">
+            <lightning-button
+                onclick={handleBtnClick}
+                variant="brand"
+                label="Pick your faviorate Salesforce mascot"
+                title="Pick your faviorate Salesforce mascot"
+                class="slds-align_absolute-center"
+            >
+            </lightning-button>
+            <template if:true={selectedMascot}>
+                <p
+                    class="slds-text-heading_small slds-text-align_center slds-var-m-top_small"
+                >
+                    Your selected <b>{selectedMascot}</b> as your faviorate
+                    Salesforce mascot
+                </p>
+            </template>
+        </lightning-card>
+    </div>
+</template>
