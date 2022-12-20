@@ -3,9 +3,12 @@
         label="Mascot Picker Modal"
     ></lightning-modal-header>
     <lightning-modal-body>
-        <c-visual-picker items={mascots} onselect={handleSelect}></c-visual-picker>
+        <c-visual-picker
+            items={mascots}
+            onselect={handleSelect}
+        ></c-visual-picker>
     </lightning-modal-body>
     <lightning-modal-footer>
-        <lightning-button label="Confirm" onclick={handleConfirm}></lightning-button>
+        <c-button-wrapper onselect={handleConfirm}></c-button-wrapper>
     </lightning-modal-footer>
 </template>
