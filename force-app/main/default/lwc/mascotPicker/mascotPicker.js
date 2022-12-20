@@ -51,7 +51,6 @@ export default class MascotPicker extends LightningElement {
             }
         }).then((result) => {
             console.log(result);
-            this.selectedMascot = result;
         });
     }
 

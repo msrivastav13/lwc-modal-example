@@ -7,7 +7,6 @@ export default class MascotPickerModal extends LightningModal {
 
     handleSelect(event) {
         this.selectedMascot = event.detail;
-        console.log(event.detail);
     }
 
     handleConfirm() {
