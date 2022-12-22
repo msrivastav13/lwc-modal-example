@@ -14,7 +14,7 @@ export default class MascotPickerModal extends LightningModal {
         this.dispatchEvent(
             new CustomEvent("select", {
                 detail: {
-                    id: this.selectedMascot
+                    selectedMascot: this.selectedMascot
                 }
             })
         );
