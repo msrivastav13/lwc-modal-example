@@ -56,6 +56,6 @@ export default class MascotPicker extends LightningElement {
 
     handleSelectEvent(detail) {
         console.log('handler');
-        this.selectedMascot = detail.id;
+        this.selectedMascot = detail.selectedMascot;
     }
 }

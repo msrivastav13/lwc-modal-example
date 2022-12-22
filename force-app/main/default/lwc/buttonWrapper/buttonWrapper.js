@@ -9,7 +9,7 @@ export default class ButtonWrapper extends LightningElement {
                 bubbles: true, 
                 composed: true,
                 detail: {
-                    id: this.selectedMascot
+                    selectedMascot: this.selectedMascot
                 }
             })
         );
